@@ -1,26 +1,24 @@
+bottone = document.getElementById("genera");
+ bottone.addEventListener('click', function()
+{
 let biglietto_1;
 let km = document.getElementById('text-km').value;
 let eta = document.getElementById('text-age').value;
 
-if ( eta >= 18 && eta <= 63 ) {
+if ( eta = 'maggiorenne' ) {
     biglietto_1 =  (km * 0.21)   
-}else if ( eta <= 17 ){
+}else if ( eta = 'minorenne' ){
     biglietto_1 = km*0.21
     biglietto_1 -= (biglietto_1/100)*20
-}else{
+}else( eta = 'ovessr-65' ) {
     biglietto_1 = km*0.21
     biglietto_1 -= (biglietto_1/100)*40
 }
 
+console.log(biglietto_1);
+
 const biglietto_1_readable = biglietto_1.toFixed(2)
 
-function myFunction() {
-    var x = document.getElementById("biglietto_1").value;
-    document.getElementById("costo-biglietto").innerHTML = x;
-}
-
-
-function myFunction() {
-    var x = document.getElementById("myText").value;
-    document.getElementById("nome-cognome").innerHTML = x;
-}
+    document.getElementById("costo-biglietto").innerHTML = biglietto_1;
+    document.getElementById("myText").innerHTML = costo-biglietto;
+} );
