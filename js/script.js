@@ -20,3 +20,17 @@ document.getElementById('nome-cognome').innerText = text
 document.getElementById('costo-biglietto').innerHTML = biglietto_1;
 } );
 
+const bottone_2 = document.getElementById('annulla')
+bottone_2.addEventListener('click', function()
+{
+let text = document.getElementById('myText');
+text.value= "";
+let km = document.getElementById('text-km');
+km.value="";
+let eta = document.getElementById('text-age');
+eta.value="";
+let nome = document.getElementById('nome-cognome');
+nome.innerHTML="";
+let costo = document.getElementById('costo-biglietto');
+costo.innerHTML = "";
+})
